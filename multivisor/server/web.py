@@ -14,7 +14,7 @@ from gevent import queue, sleep
 from gevent.pywsgi import WSGIServer
 from flask import Flask, render_template, Response, request, json, jsonify, session
 from werkzeug.debug import DebuggedApplication
-from werkzeug.serving import run_with_reloader
+from werkzeug._reloader import run_with_reloader
 
 from multivisor.signals import SIGNALS
 from multivisor.util import sanitize_url
