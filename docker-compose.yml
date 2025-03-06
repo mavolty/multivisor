@@ -13,4 +13,4 @@ services:
       dockerfile: docker/Dockerfile
     command: ["supervisord", "-c", "/etc/supervisord/personid.conf"]
     ports:
-      - 9011:9011
+      - 9011:9001
