@@ -8,7 +8,7 @@ ENV PATH="/usr/app/venv/bin:$PATH"
 COPY . multivisor/
 WORKDIR /usr/app/multivisor
 
-RUN --mount=type=cache,target=/root/.cache/pip pip install --disable-pip-version-check supervisor .[rpc,web]
+RUN pip install --disable-pip-version-check supervisor .[rpc,web]
 
 FROM python:3.11-alpine
 
