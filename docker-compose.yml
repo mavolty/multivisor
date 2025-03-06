@@ -14,3 +14,7 @@ services:
     command: ["supervisord", "-c", "/etc/supervisord/personid.conf"]
     ports:
       - 9011:9001
+  laravel:
+    image: php:8.2-fpm
+    volumes:
+      - /var/www/riskv3/multivisor:/var/www/riskv3
